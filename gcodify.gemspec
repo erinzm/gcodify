@@ -5,7 +5,7 @@ require 'gcodify/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "gcodify"
-  spec.version       = Gcodify::VERSION
+  spec.version       = GCodify::VERSION
   spec.authors       = ["Liam Marshall"]
   spec.email         = ["archimedespi3141@gmail.com"]
   spec.summary       = %q{Ruby DSL which generates GCode. Make manual GCode composition fun and simple!}
