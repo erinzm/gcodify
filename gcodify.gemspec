@@ -6,11 +6,11 @@ require 'gcodify/version'
 Gem::Specification.new do |spec|
   spec.name          = "gcodify"
   spec.version       = Gcodify::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.authors       = ["Liam Marshall"]
+  spec.email         = ["archimedespi3141@gmail.com"]
+  spec.summary       = %q{Ruby DSL which generates GCode. Make manual GCode composition fun and simple!}
+  #spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.homepage      = "archimedespi.github.io/gcodify"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
