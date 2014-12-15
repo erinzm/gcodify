@@ -1,3 +1,16 @@
+
+### Linux ###
+*~
+
+# KDE directory preferences
+.directory
+
+
+### Vagrant ###
+.vagrant/
+
+
+### Ruby ###
 *.gem
 *.rbc
 /.config
