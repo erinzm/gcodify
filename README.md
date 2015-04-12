@@ -1,5 +1,5 @@
 # Gcodify
-[![Code Climate](https://codeclimate.com/github/ArchimedesPi/gcodify/badges/gpa.svg)](https://codeclimate.com/github/ArchimedesPi/gcodify) [![Build Status](https://travis-ci.org/ArchimedesPi/gcodify.svg?branch=master)](https://travis-ci.org/ArchimedesPi/gcodify)
+[![Code Climate](https://codeclimate.com/github/ArchimedesPi/gcodify/badges/gpa.svg)](https://codeclimate.com/github/ArchimedesPi/gcodify) [![Build Status](https://travis-ci.org/ArchimedesPi/gcodify.svg?branch=master)](https://travis-ci.org/ArchimedesPi/gcodify) [![Coverage Status](https://coveralls.io/repos/ArchimedesPi/gcodify/badge.svg?branch=master)](https://coveralls.io/r/ArchimedesPi/gcodify?branch=master)
 
 TODO: Write a gem description
 
