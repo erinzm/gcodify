@@ -1,3 +1,4 @@
+require 'spec_helper'
 require 'gcodify/coordinates'
 
 RSpec.describe GCodify::Coordinate do
