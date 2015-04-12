@@ -5,5 +5,5 @@ before_install:
   - gem install bundler
 
 rvm:
-  - ruby-head
+  - 2.2.1
 
