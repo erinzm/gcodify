@@ -13,7 +13,9 @@ module GCodify
 			def diameter(diameter)
 				@diameter = diameter
 			end
-			def depth(depth); @depth = depth; end
+			def depth(depth)
+				@depth = depth
+			end
 			def build
 				MachinedHole.new(@diameter, @depth)
 			end
