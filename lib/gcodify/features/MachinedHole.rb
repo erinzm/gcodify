@@ -12,9 +12,11 @@ module GCodify
 		class MachinedHoleBuilder
 			def diameter(diameter)
 				@diameter = diameter
+				self
 			end
 			def depth(depth)
 				@depth = depth
+				self
 			end
 			def build
 				MachinedHole.new(@diameter, @depth)
