@@ -21,3 +21,13 @@ RSpec.describe GCodify::Features::MachinedHole do
 		end
 	end
 end
+
+RSpec.describe GCodify::Features::MachinedHoleBuilder do
+	describe '#build' do
+		it 'builds a MachinedHole from a MachinedHoleBuilder' do
+			expect(GCodify::Features::MachinedHoleBuilder.new
+				.diameter(10).depth(50).build)
+				.to be_instance_of(GCodify::Features::MachinedHole)
+		end
+	end
+end
