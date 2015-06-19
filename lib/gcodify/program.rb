@@ -5,6 +5,10 @@ module Gcodify
     attr_accessor :ops
     include OpsMixin
 
+    def initialize
+      @ops = []
+    end
+
     # Converts the {Program} to a Gcode string
     #
     # @return [String] the Gcode
