@@ -13,20 +13,22 @@ module Gcodify::OpsMixin
   # :peck - peck step depth for peck drilling
   # :return_height - return height for pecking during peck drilling. if not specified, pecking will not return to a constant height
   #
-  # @return [HoleOp] an operation
+  # @return [HoleOp] a hole-drilling operation
   def hole(options)
   end
 
   # (see #hole)
-  # @return [PocketOp] an operation
-  def pocket(options)
+  # @return [PocketOp] a pocketing operation
+  def circular_pocket(options)
   end
 
   # (see #hole)
-  # @return [FaceOp] an operation
+  # @return [FaceOp] a facing operation
   def face(options)
   end
 
+  # Returns a dummy operation for testing
+  #
   # @return [DummyOp] a dummy operation
   def dummy(options)
     op = Gcodify::Ops::DummyOp.new(options)
