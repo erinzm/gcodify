@@ -1,9 +1,9 @@
-require "gcodify/ops"
+require "gcodify/opsmixin"
 
 module Gcodify
   class Program
-    :attr_reader ops
-    include Ops
+    attr_accessor :ops
+    include OpsMixin
 
     # Converts the {Program} to a Gcode string
     #
@@ -13,6 +13,7 @@ module Gcodify
       @ops.each do |op|
         gcode << op.to_gcode
       end
+      gcode
     end
   end
 end

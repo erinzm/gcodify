@@ -1,8 +1,8 @@
-# {Ops} is used as a Mixin to {Program} for the DSL - all of the DSL's methods,
+# {OpsMixin} is used as a Mixin to {Program} for the DSL - all of the DSL's methods,
 # ie. hole, pocket, face, etc. are implemented here, and then `import`ed into
 # {Program}, for DRYness and reusability.
-# All methods contained in {Ops} return a subclass of Op, ie. HoleOp, PocketOp, and so on.
-module Gcodify::Ops
+# All methods contained in {OpsMixin} return a subclass of Op, ie. HoleOp, PocketOp, and so on.
+module Gcodify::OpsMixin
   # options is a Hash
   # standard stuff in options for all these functions
   # not every op will use all of these.
