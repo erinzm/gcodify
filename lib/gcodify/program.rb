@@ -4,10 +4,11 @@ module Gcodify
   # Represents a GCode program. It contains a property @ops, which is an array
   # of all the ops, in order, in the program.
   class Program
+    # Access all ops in the program
     attr_accessor :ops
     # Mix in all the op functions for the DSL :D
     include OpsMixin
-    
+
     def initialize
       @ops = []
     end
