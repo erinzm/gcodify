@@ -6,10 +6,7 @@ describe Gcodify do
   end
   it 'does useful work' do
     program = Gcodify.program do
-      hole do
-        coordinates [10, 10]
-        depth 10
-      end
+      hole :at => [10, 10], :depth => 10
     end
     expect(program.to_gcode).not_to be nil
   end
