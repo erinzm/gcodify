@@ -26,4 +26,11 @@ module Gcodify::OpsMixin
   # @return [FaceOp] an operation
   def face(options)
   end
+
+  # @return [DummyOp] a dummy operation
+  def dummy(options)
+    op = Gcodify::Ops::DummyOp.new(options)
+    @ops << op
+    op
+  end
 end
