@@ -4,6 +4,12 @@ module Gcodify
   # {Op}s are subclassed into things like HoleOp, PocketOp, etc., and each is responsible
   # for storing data and each provides its own implementation of #to_gcode.
   class Op
+    attr_reader :options
+
+    def initialize(options)
+      @options = options
+    end
+
     # Converts the {Op} to Gcode. Each *{Op} has it's own implementation of #to_gcode,
     # depending on what gcode it has to generate.
     #

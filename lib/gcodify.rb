@@ -2,6 +2,7 @@ require "gcodify/version"
 require "gcodify/program"
 require "gcodify/opsmixin"
 require "gcodify/op"
+require "gcodify/ops/holeop"
 require "gcodify/ops/dummyop"
 
 module Gcodify
