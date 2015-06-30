@@ -30,6 +30,14 @@ module Gcodify::OpsMixin
   def face(options)
   end
 
+  #
+  # @return [GcodeOp] a line of gcode
+  def gcode(code)
+    op = Gcodify::Ops::GcodeOp(code)
+    @ops << op
+    op
+  end
+
   # Returns a dummy operation for testing
   #
   # @return [DummyOp] a dummy operation
