@@ -30,8 +30,11 @@ module Gcodify::OpsMixin
   def face(options)
   end
 
+  # Passes through a line of gcode to the output
+  # Useful when a particular gcode feature isn't implemented in gcodify
   #
-  # @return [GcodeOp] a line of gcode
+  # @param gcode [String] a line of gcode
+  # @return [GcodeOp] an Op representing that line of gcode
   def gcode(code)
     op = Gcodify::Ops::GcodeOp(code)
     @ops << op
