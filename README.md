@@ -14,17 +14,30 @@ Add this line to your application's Gemfile:
 gem 'gcodify'
 ```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+And then just `$ bundle`.
+Or install it yourself:
 
     $ gem install gcodify
 
 ## Usage
 
-TODO: Write usage instructions here
+Write a new ruby file that requires `gcodify`:
+
+```ruby
+require 'gcodify'
+```
+
+Tell it that you want a program with certain features:
+
+```ruby
+program = GCodify.program do
+    hole :at=>[0, 0], depth=>0.13
+end
+puts program.to_gcode # output the program's gcode to stdout
+```
+
+Then run it: `$ ruby some_gcodify_script.rb > some_gcodify_script.gcode`.
+You just made a gcode program which makes a hole at the origin!
 
 ## Development
 
@@ -34,7 +47,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/gcodify. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ArchimedesPi/gcodify. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License
