@@ -34,7 +34,7 @@ module Gcodify::OpsMixin
   # Useful when a particular gcode feature isn't implemented in gcodify
   #
   # @param gcode [String] a line of gcode
-  # @return [GcodeOp] an Op representing that line of gcode
+  # @return [GcodeOp] a {GcodeOp} representing that line of gcode
   def gcode(code)
     op = Gcodify::Ops::GcodeOp(code)
     @ops << op

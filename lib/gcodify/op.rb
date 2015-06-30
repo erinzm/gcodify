@@ -6,6 +6,7 @@ module Gcodify
   class Op
     attr_reader :options
 
+    # @param options [Hash] a {Hash} of options to be passed in to the op
     def initialize(options)
       @options = options
     end
