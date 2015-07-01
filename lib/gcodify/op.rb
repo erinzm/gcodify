@@ -3,8 +3,9 @@ module Gcodify
   # is a single {Op}, a circular pocket is a single {Op}, and so on.
   # {Op}s are subclassed into things like HoleOp, PocketOp, etc., and each is responsible
   # for storing data and each provides its own implementation of #to_gcode.
+  # @!attribute [r] options
+  #   @return [Hash] the options passed to the Op. Used for testing.
   class Op
-    # Make @options readable for testing purposes.
     attr_reader :options
 
     # @param options [Hash] a {Hash} of options to be passed in to the op
