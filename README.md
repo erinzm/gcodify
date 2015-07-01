@@ -6,7 +6,7 @@ Gcodify is a Ruby DSL for more easily hand-writing gcode. When it comes time to 
 
 ## Feature status list
 * DSL (✔)
-* Holes (with a drill-bit in the chuck) (✘)
+* Holes (with a drill-bit in a chuck on the spindle) (✔)
 * Pockets (✘)
 * Facing (✘)
 * Manual gcode entry (✔)
