@@ -4,6 +4,7 @@ module Gcodify
   # {Op}s are subclassed into things like HoleOp, PocketOp, etc., and each is responsible
   # for storing data and each provides its own implementation of #to_gcode.
   class Op
+    # Make @options readable for testing purposes.
     attr_reader :options
 
     # @param options [Hash] a {Hash} of options to be passed in to the op
