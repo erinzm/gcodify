@@ -9,9 +9,10 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Liam Marshall"]
   spec.email         = ["liam@cpan.org"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Gcodify makes writing gcode by hand fun!}
+  spec.description   = %q{Gcodify is a Ruby DSL which generates gcode from a high-level,
+    Ruby-based description language. It's kind of like hand-written CAM.}
+  spec.homepage      = "https://github.com/ArchimedesPi/gcodify"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
