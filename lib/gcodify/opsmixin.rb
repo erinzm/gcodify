@@ -15,9 +15,7 @@ module Gcodify::OpsMixin
   #
   # @return [HoleOp] a hole-drilling operation
   def hole(options)
-    op = Gcodify::Ops::HoleOp.new(options)
-    @ops << op
-    op
+    @ops = Gcodify::Ops::HoleOp.new(options)
   end
 
   # (see #hole)
@@ -35,19 +33,7 @@ module Gcodify::OpsMixin
   # that you might want to use.
   #
   # @param gcode [String] a line of gcode
-  # @return [GcodeOp] a {GcodeOp} representing that line of gcode
   def gcode(code)
-    op = Gcodify::Ops::GcodeOp(code)
-    @ops << op
-    op
-  end
-
-  # Returns a dummy operation for testing
-  #
-  # @return [DummyOp] a dummy operation
-  def dummy(options)
-    op = Gcodify::Ops::DummyOp.new(options)
-    @ops << op
-    op
+    @ops << Gcodify::Ops::GcodeOp(code)
   end
 end
